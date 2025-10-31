@@ -1,0 +1,210 @@
+body {
+  /* 手机端背景图 */
+  --mobile-background-image: url(https://angustar.com/api/bing);
+  /* 电脑端背景图 */
+  --desktop-background-image: url(https://angustar.com/api/bing);
+}
+
+/* 链接与选中优化 */
+.hope-ui-dark .markdown-body a {
+  color: var(--hope-colors-loContrast) !important;
+  transition: color 0.3s ease-in-out;
+}
+.hope-ui-dark .markdown-body a:hover {
+  color: var(--hope-colors-accent8) !important;
+}
+html ::selection {
+  background-color: var(--hope-colors-accent8);
+  color: var(--hope-colors-loContrast);
+}
+
+/* 背景设置 */
+body {
+  background-image: var(--desktop-background-image) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+ transition: background-image 0.6s ease-in-out;
+}
+@media screen and (max-width: 960px) {
+ body {
+    background-image: var(--mobile-background-image) !important;
+  }
+}
+.video-background {
+   position: fixed;
+   top: 0px;
+   z-index:-1;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   min-height: 100vh;
+   display: block;
+}
+
+/* 视频容器液态玻璃背景支持 */
+.video-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.video-container video {
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto;
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+/* 液态玻璃主体层优化 */
+.hope-c-PJLV-idaeksS-css,
+.hope-c-PJLV-ikaMhsQ-css,
+.hope-c-PJLV-iiuDLME-css,
+.hope-c-PJLV-ikSuVsl-css {
+  background: none !important;
+}
+
+/* 卡片容器更柔和边缘与微光 */
+.hope-c-PJLV-idaeksS-css,
+.hope-c-PJLV-iiuDLME-css,
+.hope-c-PJLV-ikSuVsl-css {
+  border-radius: var(--hope-radii-full);
+  overflow: hidden;
+  padding: var(--hope-space-1) var(--hope-space-2);
+  backdrop-filter: blur(25px) saturate(1.5);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 1px 1px 2px rgba(255,255,255,0.3),
+    inset -1px -1px 2px rgba(255,255,255,0.3),
+    0 8px 24px rgba(0,0,0,0.25);
+  transition: all 0.3s ease-in-out;
+}
+.hope-c-PJLV-idaeksS-css:hover ,
+.hope-c-PJLV-iiuDLME-css:hover,
+.hope-c-PJLV-ikSuVsl-css:hover{
+  transform: translateY(-2px);
+  box-shadow:
+    inset 1px 1px 2px rgba(255,255,255,0.4),
+    0 10px 28px rgba(0,0,0,0.3);
+}
+
+.hope-c-khZXrc {
+  display: inline-block !important;
+}
+.hope-c-cPYwgm {
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  word-break: break-all;
+}
+.hope-c-iIOWzi {
+  padding: 0 var(--hope-space-1) !important;
+}
+
+/* 全局液态玻璃层 */
+.hope-c-PJLV-igScBhH-css,
+.hope-c-hOYTCS,
+.hope-c-PJLV-idaeksS-css,
+.hope-c-PJLV-ieTGfmR-css,
+.header-right.hope-stack>div,
+.hope-c-PJLV-ijgzmFG-css,
+.hope-c-PJLV-ikJQsXT-css,
+.hope-c-zbPwS,
+.hope-c-XJURY,
+.hope-c-ivMHWx-fbcPgu-cv,
+.hope-c-ivMHWx-dvmlqS-cv,
+.hope-c-ivMHWx-dMllzy-cv,
+.hope-c-cFbQhW,
+.hope-c-ivMHWx-knrFJ-cv,
+.hope-c-ivMHWx-gHYUvy-cv,
+.hope-c-PJLV-iigjoxS-css,
+.solid-contextmenu,
+.hope-c-PJLV-idusLCn-css,
+.hope-c-ivMHWx-eHkSxq-cv,
+.hope-c-kvTTWD-hYRNAb-variant-filled,
+.hope-c-ivMHWx:disabled,
+.hope-c-mHASU-byiOue-variant-filled,
+.hope-c-mHASU-kukbfD-variant-outline,
+.hope-c-PJLV-ihVEsOa-css,
+.hope-c-gIqhpo,
+.hope-c-PJLV-idMNcPR-css,
+.hope-c-PJLV-ieGWMbI-css,
+.hope-c-PJLV-iZZmce-css,
+.hope-c-PJLV-ibcBsNO-css .hope-c-PJLV-iubUra-css,
+.hope-c-PJLV-ibcBsNO-css .hope-c-PJLV-ifjOQLV-css,
+.hope-c-cIFneQ,
+.hope-c-PJLV-iiuDLME-css,
+.hope-c-PJLV-ikSuVsl-css {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.3),
+    inset -1px -1px 1px rgba(255,255,255,0.2),
+    0 4px 20px rgba(0,0,0,0.25) !important;
+  cursor: grab;
+  backdrop-filter: blur(18px) saturate(1.4) !important;
+  pointer-events: auto;
+  border: none !important;
+  transition: all 0.3s ease-in-out;
+}
+.hope-c-PJLV-iiuDLME-css {
+ cursor: auto;
+}
+
+/* 顶栏按钮统一柔光 */
+.header-right.hope-stack>div {
+  height: var(--hope-sizes-8);
+  border: none !important;
+  padding: var(--hope-space-1) var(--hope-space-2) !important;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px) saturate(1.3);
+  border-radius: var(--hope-radii-full);
+  transition: background 0.3s ease-in-out;
+}
+.header-right.hope-stack>div:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* 输入框与代码块液态优化 */
+.hope-c-PJLV-ijSQbqe-css {
+  background-color: rgba(0,0,0,0.3) !important;
+  border-color: rgba(234,234,234,0.3) !important;
+}
+.hope-c-PJLV-iciJSBF-css {
+  opacity: 0.6;
+}
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: rgba(0,0,0,0.35) !important; 
+  backdrop-filter: blur(10px);
+  border-radius: var(--hope-radii-lg);
+}
+
+/* 活动按钮反馈 */
+.hope-c-gUeVCo[data-active],
+.hope-c-kRwRnM-gSazcJ-colorScheme-neutral[data-active] {
+  background-color: rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+/* 模态与滚动容器 */
+.hope-c-ctSAUo,
+.hope-c-bICGYT-dWksIc-scrollBehavior-outside {
+  background-color: rgba(0,0,0,0.45) !important;
+  backdrop-filter: blur(14px);
+}
+
+.hope-c-PJLV-ihWgyFw-css,
+.hope-c-PJLV-ibiABng-css {
+  display: none !important;
+}
+
+/* 隐藏页脚内容 */
+ .footer {
+ display: none !important;
+ }
